@@ -1,0 +1,76 @@
+============================================================
+Mapa 2 - Solución no óptima
+============================================================
+Inicio: (0, 0) | Destino: (6, 6) | Celda: 0,50 m | Orientacion inicial: ESTE | Maximo de pasos: 40
+Desempate: ARRIBA -> DERECHA -> ABAJO -> IZQUIERDA
+
+Decisiones paso a paso:
+Paso 1 desde (0, 0): DERECHA (0,1) d=11 -> elige DERECHA
+Paso 2 desde (0, 1): DERECHA (0,2) d=10, ABAJO (1,1) d=10 -> elige DERECHA
+Paso 3 desde (0, 2): DERECHA (0,3) d=9, ABAJO (1,2) d=9 -> elige DERECHA
+Paso 4 desde (0, 3): DERECHA (0,4) d=8, ABAJO (1,3) d=8 -> elige DERECHA
+Paso 5 desde (0, 4): DERECHA (0,5) d=7, ABAJO (1,4) d=7 -> elige DERECHA
+Paso 6 desde (0, 5): ABAJO (1,5) d=6 -> elige ABAJO
+Paso 7 desde (1, 5): DERECHA (1,6) d=5, ABAJO (2,5) d=5, IZQUIERDA (1,4) d=7 -> elige DERECHA
+Paso 8 desde (1, 6): ABAJO (2,6) d=4 -> elige ABAJO
+Paso 9 desde (2, 6): ABAJO (3,6) d=3, IZQUIERDA (2,5) d=5 -> elige ABAJO
+Paso 10 desde (3, 6): ABAJO (4,6) d=2, IZQUIERDA (3,5) d=4 -> elige ABAJO
+Paso 11 desde (4, 6): IZQUIERDA (4,5) d=3 -> elige IZQUIERDA
+Paso 12 desde (4, 5): ARRIBA (3,5) d=4, IZQUIERDA (4,4) d=4 -> elige ARRIBA
+Paso 13 desde (3, 5): ARRIBA (2,5) d=5, IZQUIERDA (3,4) d=5 -> elige ARRIBA
+Paso 14 desde (2, 5): IZQUIERDA (2,4) d=6 -> elige IZQUIERDA
+Paso 15 desde (2, 4): ARRIBA (1,4) d=7, ABAJO (3,4) d=5, IZQUIERDA (2,3) d=7 -> elige ABAJO
+Paso 16 desde (3, 4): ABAJO (4,4) d=4, IZQUIERDA (3,3) d=6 -> elige ABAJO
+Paso 17 desde (4, 4): ABAJO (5,4) d=3, IZQUIERDA (4,3) d=5 -> elige ABAJO
+Paso 18 desde (5, 4): ABAJO (6,4) d=2, IZQUIERDA (5,3) d=4 -> elige ABAJO
+Paso 19 desde (6, 4): DERECHA (6,5) d=1, IZQUIERDA (6,3) d=3 -> elige DERECHA
+Paso 20 desde (6, 5): DERECHA (6,6) d=0 -> elige DERECHA
+
+Resultado: DESTINO_ALCANZADO
+Causa: El robot llego a la celda destino.
+Movimientos realizados: 20
+Posicion final: (6, 6) - Destino: (6, 6)
+Ruta: (0, 0) -> (0, 1) -> (0, 2) -> (0, 3) -> (0, 4) -> (0, 5) -> (1, 5) -> (1, 6) -> (2, 6) -> (3, 6) -> (4, 6) -> (4, 5) -> (3, 5) -> (2, 5) -> (2, 4) -> (3, 4) -> (4, 4) -> (5, 4) -> (6, 4) -> (6, 5) -> (6, 6)
+
+Representacion de la ruta:
+    0 1 2 3 4 5 6 
+0   I > > > > v #
+1   # . . . . > v
+2   . . X . v < v
+3   . . . . v ^ v
+4   . . . . v ^ <
+5   . # # . v # #
+6   # . # . > > D
+
+I = inicio | D = destino | F = posicion final (si no llego al destino)
+^ > v < = hacia donde se mueve desde esa celda | # = obstaculo | X = zona prohibida | . = libre
+
+Instrucciones para el robot (28):
+  1. AVANZAR 0,50 m
+  2. AVANZAR 0,50 m
+  3. AVANZAR 0,50 m
+  4. AVANZAR 0,50 m
+  5. AVANZAR 0,50 m
+  6. GIRAR DERECHA 90 grados
+  7. AVANZAR 0,50 m
+  8. GIRAR IZQUIERDA 90 grados
+  9. AVANZAR 0,50 m
+  10. GIRAR DERECHA 90 grados
+  11. AVANZAR 0,50 m
+  12. AVANZAR 0,50 m
+  13. AVANZAR 0,50 m
+  14. GIRAR DERECHA 90 grados
+  15. AVANZAR 0,50 m
+  16. GIRAR DERECHA 90 grados
+  17. AVANZAR 0,50 m
+  18. AVANZAR 0,50 m
+  19. GIRAR IZQUIERDA 90 grados
+  20. AVANZAR 0,50 m
+  21. GIRAR IZQUIERDA 90 grados
+  22. AVANZAR 0,50 m
+  23. AVANZAR 0,50 m
+  24. AVANZAR 0,50 m
+  25. AVANZAR 0,50 m
+  26. GIRAR IZQUIERDA 90 grados
+  27. AVANZAR 0,50 m
+  28. AVANZAR 0,50 m

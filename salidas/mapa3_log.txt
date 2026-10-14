@@ -1,0 +1,57 @@
+============================================================
+Mapa 3 - Fracaso de la estrategia
+============================================================
+Inicio: (0, 0) | Destino: (6, 6) | Celda: 0,50 m | Orientacion inicial: ESTE | Maximo de pasos: 50
+Desempate: ARRIBA -> DERECHA -> ABAJO -> IZQUIERDA
+
+Decisiones paso a paso:
+Paso 1 desde (0, 0): DERECHA (0,1) d=11, ABAJO (1,0) d=11 -> elige DERECHA
+Paso 2 desde (0, 1): DERECHA (0,2) d=10, ABAJO (1,1) d=10 -> elige DERECHA
+Paso 3 desde (0, 2): ABAJO (1,2) d=9 -> elige ABAJO
+Paso 4 desde (1, 2): ABAJO (2,2) d=8, IZQUIERDA (1,1) d=10 -> elige ABAJO
+Paso 5 desde (2, 2): ABAJO (3,2) d=7, IZQUIERDA (2,1) d=9 -> elige ABAJO
+Paso 6 desde (3, 2): IZQUIERDA (3,1) d=8 -> elige IZQUIERDA
+Paso 7 desde (3, 1): ARRIBA (2,1) d=9, ABAJO (4,1) d=7, IZQUIERDA (3,0) d=9 -> elige ABAJO
+Paso 8 desde (4, 1): ABAJO (5,1) d=6, IZQUIERDA (4,0) d=8 -> elige ABAJO
+Paso 9 desde (5, 1): ABAJO (6,1) d=5, IZQUIERDA (5,0) d=7 -> elige ABAJO
+Paso 10 desde (6, 1): DERECHA (6,2) d=4 -> elige DERECHA
+Paso 11 desde (6, 2): DERECHA (6,3) d=3 -> elige DERECHA
+Paso 12 desde (6, 3): ARRIBA (5,3) d=4, DERECHA (6,4) d=2 -> elige DERECHA
+Paso 13 desde (6, 4): sin candidatos validos
+
+Resultado: BLOQUEADO
+Causa: No existen candidatos validos para continuar.
+Movimientos realizados: 12
+Posicion final: (6, 4) - Destino: (6, 6)
+Ruta: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2) -> (3, 2) -> (3, 1) -> (4, 1) -> (5, 1) -> (6, 1) -> (6, 2) -> (6, 3) -> (6, 4)
+
+Representacion de la ruta:
+    0 1 2 3 4 5 6 
+0   I > v # X . .
+1   . . v # # . .
+2   . . v # # # .
+3   . v < # . . .
+4   . v X . . . .
+5   . v # . # . .
+6   # > > > F # D
+
+I = inicio | D = destino | F = posicion final (si no llego al destino)
+^ > v < = hacia donde se mueve desde esa celda | # = obstaculo | X = zona prohibida | . = libre
+
+Instrucciones para el robot (16):
+  1. AVANZAR 0,50 m
+  2. AVANZAR 0,50 m
+  3. GIRAR DERECHA 90 grados
+  4. AVANZAR 0,50 m
+  5. AVANZAR 0,50 m
+  6. AVANZAR 0,50 m
+  7. GIRAR DERECHA 90 grados
+  8. AVANZAR 0,50 m
+  9. GIRAR IZQUIERDA 90 grados
+  10. AVANZAR 0,50 m
+  11. AVANZAR 0,50 m
+  12. AVANZAR 0,50 m
+  13. GIRAR IZQUIERDA 90 grados
+  14. AVANZAR 0,50 m
+  15. AVANZAR 0,50 m
+  16. AVANZAR 0,50 m

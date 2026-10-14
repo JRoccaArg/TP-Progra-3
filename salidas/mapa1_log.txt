@@ -1,0 +1,45 @@
+============================================================
+Mapa 1 - Solución directa
+============================================================
+Inicio: (0, 0) | Destino: (4, 4) | Celda: 0,50 m | Orientacion inicial: ESTE | Maximo de pasos: 30
+Desempate: ARRIBA -> DERECHA -> ABAJO -> IZQUIERDA
+
+Decisiones paso a paso:
+Paso 1 desde (0, 0): DERECHA (0,1) d=7 -> elige DERECHA
+Paso 2 desde (0, 1): DERECHA (0,2) d=6 -> elige DERECHA
+Paso 3 desde (0, 2): ABAJO (1,2) d=5 -> elige ABAJO
+Paso 4 desde (1, 2): ABAJO (2,2) d=4 -> elige ABAJO
+Paso 5 desde (2, 2): DERECHA (2,3) d=3, IZQUIERDA (2,1) d=5 -> elige DERECHA
+Paso 6 desde (2, 3): DERECHA (2,4) d=2 -> elige DERECHA
+Paso 7 desde (2, 4): ARRIBA (1,4) d=3, ABAJO (3,4) d=1 -> elige ABAJO
+Paso 8 desde (3, 4): ABAJO (4,4) d=0 -> elige ABAJO
+
+Resultado: DESTINO_ALCANZADO
+Causa: El robot llego a la celda destino.
+Movimientos realizados: 8
+Posicion final: (4, 4) - Destino: (4, 4)
+Ruta: (0, 0) -> (0, 1) -> (0, 2) -> (1, 2) -> (2, 2) -> (2, 3) -> (2, 4) -> (3, 4) -> (4, 4)
+
+Representacion de la ruta:
+    0 1 2 3 4 
+0   I > v # .
+1   # # v # .
+2   . . > > v
+3   . X # # v
+4   . . . . D
+
+I = inicio | D = destino | F = posicion final (si no llego al destino)
+^ > v < = hacia donde se mueve desde esa celda | # = obstaculo | X = zona prohibida | . = libre
+
+Instrucciones para el robot (11):
+  1. AVANZAR 0,50 m
+  2. AVANZAR 0,50 m
+  3. GIRAR DERECHA 90 grados
+  4. AVANZAR 0,50 m
+  5. AVANZAR 0,50 m
+  6. GIRAR IZQUIERDA 90 grados
+  7. AVANZAR 0,50 m
+  8. AVANZAR 0,50 m
+  9. GIRAR DERECHA 90 grados
+  10. AVANZAR 0,50 m
+  11. AVANZAR 0,50 m
